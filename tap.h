@@ -59,7 +59,7 @@ static inline void _tap_print_indent(tap_t* t) {
  * @param t TAP document
  */
 static inline tap_t _tap_init(FILE* out, int indent) {
-  return {
+  return (tap_t){
     out, // out
     0, // plan_count
     0, // count
